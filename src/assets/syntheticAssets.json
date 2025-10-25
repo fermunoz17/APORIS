@@ -1,0 +1,978 @@
+[
+  {
+    "id": "SS-001",
+    "name": "Substation 1 HMI",
+    "type": "HMI",
+    "regionShard": "regionA",
+    "vendor": "Contoso",
+    "firmwareVersion": "5.4.2",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [
+      "PLC-011"
+    ],
+    "vulnScore": 8.6,
+    "operationalRisk": 0.72,
+    "uptimeRequirementPct": 99.95,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "rolling"
+    ],
+    "lastPatchedAt": "2025-09-18",
+    "maintenanceWindows": [
+      {
+        "day": "Sat",
+        "start": "01:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-10"
+  },
+  {
+    "id": "PLC-011",
+    "name": "Feeder PLC 11",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Northwind Automation",
+    "firmwareVersion": "2.19.0",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 7.9,
+    "operationalRisk": 0.66,
+    "uptimeRequirementPct": 99.99,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-05"
+  },
+  {
+    "id": "ASSET-003",
+    "name": "Asset 3 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Adventure Grid",
+    "firmwareVersion": "11.7.9",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 8.2,
+    "operationalRisk": 0.2,
+    "uptimeRequirementPct": 99.921,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-13"
+  },
+  {
+    "id": "ASSET-004",
+    "name": "Asset 4 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Contoso",
+    "firmwareVersion": "1.6.1",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 8.6,
+    "operationalRisk": 0.45,
+    "uptimeRequirementPct": 99.578,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-12"
+  },
+  {
+    "id": "ASSET-005",
+    "name": "Asset 5 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Northwind Automation",
+    "firmwareVersion": "3.3.2",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 7.4,
+    "operationalRisk": 0.63,
+    "uptimeRequirementPct": 99.949,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-23"
+  },
+  {
+    "id": "ASSET-006",
+    "name": "Asset 6 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "15.8.0",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 5.4,
+    "operationalRisk": 0.21,
+    "uptimeRequirementPct": 99.648,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-06"
+  },
+  {
+    "id": "ASSET-007",
+    "name": "Asset 7 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "Contoso",
+    "firmwareVersion": "6.5.7",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 4.3,
+    "operationalRisk": 0.51,
+    "uptimeRequirementPct": 99.954,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-09"
+  },
+  {
+    "id": "ASSET-008",
+    "name": "Asset 8 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Adventure Grid",
+    "firmwareVersion": "6.5.0",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 3.7,
+    "operationalRisk": 0.3,
+    "uptimeRequirementPct": 99.503,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-28"
+  },
+  {
+    "id": "ASSET-009",
+    "name": "Asset 9 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Northwind Automation",
+    "firmwareVersion": "5.6.5",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 9.0,
+    "operationalRisk": 0.43,
+    "uptimeRequirementPct": 99.964,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-09"
+  },
+  {
+    "id": "ASSET-010",
+    "name": "Asset 10 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "11.9.8",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 7.7,
+    "operationalRisk": 0.48,
+    "uptimeRequirementPct": 99.803,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-21"
+  },
+  {
+    "id": "ASSET-011",
+    "name": "Asset 11 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "Fabrikam",
+    "firmwareVersion": "10.9.6",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 8.9,
+    "operationalRisk": 0.29,
+    "uptimeRequirementPct": 99.552,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-05"
+  },
+  {
+    "id": "ASSET-012",
+    "name": "Asset 12 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "7.6.0",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 9.0,
+    "operationalRisk": 0.43,
+    "uptimeRequirementPct": 99.675,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-05"
+  },
+  {
+    "id": "ASSET-013",
+    "name": "Asset 13 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "14.6.8",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 9.1,
+    "operationalRisk": 0.83,
+    "uptimeRequirementPct": 99.574,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-29"
+  },
+  {
+    "id": "ASSET-014",
+    "name": "Asset 14 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "10.7.0",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 6.4,
+    "operationalRisk": 0.76,
+    "uptimeRequirementPct": 99.706,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-23"
+  },
+  {
+    "id": "ASSET-015",
+    "name": "Asset 15 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Contoso",
+    "firmwareVersion": "10.4.2",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 9.3,
+    "operationalRisk": 0.62,
+    "uptimeRequirementPct": 99.503,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-16"
+  },
+  {
+    "id": "ASSET-016",
+    "name": "Asset 16 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Contoso",
+    "firmwareVersion": "7.6.3",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 3.3,
+    "operationalRisk": 0.32,
+    "uptimeRequirementPct": 99.785,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-08"
+  },
+  {
+    "id": "ASSET-017",
+    "name": "Asset 17 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "14.2.5",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 4.9,
+    "operationalRisk": 0.23,
+    "uptimeRequirementPct": 99.601,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-20"
+  },
+  {
+    "id": "ASSET-018",
+    "name": "Asset 18 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Contoso",
+    "firmwareVersion": "1.9.3",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 3.4,
+    "operationalRisk": 0.16,
+    "uptimeRequirementPct": 99.644,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-11"
+  },
+  {
+    "id": "ASSET-019",
+    "name": "Asset 19 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Fabrikam",
+    "firmwareVersion": "12.6.5",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 8.7,
+    "operationalRisk": 0.62,
+    "uptimeRequirementPct": 99.958,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-09"
+  },
+  {
+    "id": "ASSET-020",
+    "name": "Asset 20 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Northwind Automation",
+    "firmwareVersion": "10.8.3",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 8.6,
+    "operationalRisk": 0.35,
+    "uptimeRequirementPct": 99.848,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-30"
+  },
+  {
+    "id": "ASSET-021",
+    "name": "Asset 21 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Fabrikam",
+    "firmwareVersion": "4.8.0",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 6.9,
+    "operationalRisk": 0.58,
+    "uptimeRequirementPct": 99.593,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-20"
+  },
+  {
+    "id": "ASSET-022",
+    "name": "Asset 22 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "13.5.6",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 6.8,
+    "operationalRisk": 0.32,
+    "uptimeRequirementPct": 99.646,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-10"
+  },
+  {
+    "id": "ASSET-023",
+    "name": "Asset 23 HMI",
+    "type": "HMI",
+    "regionShard": "regionA",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "10.2.2",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [
+      "PLC-011"
+    ],
+    "vulnScore": 5.3,
+    "operationalRisk": 0.77,
+    "uptimeRequirementPct": 99.853,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "rolling"
+    ],
+    "lastPatchedAt": "2025-09-18",
+    "maintenanceWindows": [
+      {
+        "day": "Sat",
+        "start": "01:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-07"
+  },
+  {
+    "id": "ASSET-024",
+    "name": "Asset 24 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Contoso",
+    "firmwareVersion": "14.4.5",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 3.3,
+    "operationalRisk": 0.67,
+    "uptimeRequirementPct": 99.636,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-28"
+  },
+  {
+    "id": "ASSET-025",
+    "name": "Asset 25 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "5.7.8",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 5.8,
+    "operationalRisk": 0.36,
+    "uptimeRequirementPct": 99.622,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-08"
+  },
+  {
+    "id": "ASSET-026",
+    "name": "Asset 26 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "12.1.5",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 6.5,
+    "operationalRisk": 0.54,
+    "uptimeRequirementPct": 99.636,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-10"
+  },
+  {
+    "id": "ASSET-027",
+    "name": "Asset 27 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "8.1.2",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 5.7,
+    "operationalRisk": 0.6,
+    "uptimeRequirementPct": 99.715,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-30"
+  },
+  {
+    "id": "ASSET-028",
+    "name": "Asset 28 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "10.3.3",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 3.8,
+    "operationalRisk": 0.73,
+    "uptimeRequirementPct": 99.727,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-19"
+  },
+  {
+    "id": "ASSET-029",
+    "name": "Asset 29 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "8.6.7",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 8.5,
+    "operationalRisk": 0.47,
+    "uptimeRequirementPct": 99.882,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-26"
+  },
+  {
+    "id": "ASSET-030",
+    "name": "Asset 30 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "WideWorld Power",
+    "firmwareVersion": "6.3.4",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 6.8,
+    "operationalRisk": 0.62,
+    "uptimeRequirementPct": 99.54,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-15"
+  },
+  {
+    "id": "ASSET-031",
+    "name": "Asset 31 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Northwind Automation",
+    "firmwareVersion": "8.0.6",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 9.0,
+    "operationalRisk": 0.3,
+    "uptimeRequirementPct": 99.74,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-06"
+  },
+  {
+    "id": "ASSET-032",
+    "name": "Asset 32 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "2.4.9",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 4.2,
+    "operationalRisk": 0.19,
+    "uptimeRequirementPct": 99.959,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-11"
+  },
+  {
+    "id": "ASSET-033",
+    "name": "Asset 33 PLC",
+    "type": "PLC",
+    "regionShard": "regionA",
+    "vendor": "Tailspin Secure",
+    "firmwareVersion": "3.6.0",
+    "networkZone": "Control",
+    "criticality": 2,
+    "dependencies": [],
+    "vulnScore": 6.6,
+    "operationalRisk": 0.51,
+    "uptimeRequirementPct": 99.851,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-24"
+  },
+  {
+    "id": "ASSET-034",
+    "name": "Asset 34 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Contoso",
+    "firmwareVersion": "5.7.9",
+    "networkZone": "Control",
+    "criticality": 5,
+    "dependencies": [],
+    "vulnScore": 3.5,
+    "operationalRisk": 0.21,
+    "uptimeRequirementPct": 99.708,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-06"
+  },
+  {
+    "id": "ASSET-035",
+    "name": "Asset 35 PLC",
+    "type": "PLC",
+    "regionShard": "regionC",
+    "vendor": "Contoso",
+    "firmwareVersion": "14.0.7",
+    "networkZone": "Control",
+    "criticality": 4,
+    "dependencies": [],
+    "vulnScore": 5.1,
+    "operationalRisk": 0.64,
+    "uptimeRequirementPct": 99.776,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-12-23"
+  },
+  {
+    "id": "ASSET-036",
+    "name": "Asset 36 PLC",
+    "type": "PLC",
+    "regionShard": "regionB",
+    "vendor": "Fabrikam",
+    "firmwareVersion": "13.1.4",
+    "networkZone": "Control",
+    "criticality": 3,
+    "dependencies": [],
+    "vulnScore": 3.8,
+    "operationalRisk": 0.16,
+    "uptimeRequirementPct": 99.704,
+    "rebootSensitivity": "high",
+    "allowedPatchMethods": [
+      "hot"
+    ],
+    "lastPatchedAt": "2025-08-27",
+    "maintenanceWindows": [
+      {
+        "day": "Sun",
+        "start": "02:00",
+        "end": "03:00"
+      }
+    ],
+    "complianceDeadline": "2025-11-19"
+  }
+]
