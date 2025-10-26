@@ -1,0 +1,347 @@
+/* src/styles/dashboard.css */
+
+/* ----------------- Root ----------------- */
+:root {
+  --bg: #f5f7fa;
+  --bg-card: #fff;
+  --text: #111;
+  --text-light: #555;
+  --accent: #000;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --gap: 1rem;
+  --radius: 14px;
+  --pill-radius: 999px;
+  --font: "Inter", system-ui, sans-serif;
+}
+
+/* -------------- Layout Base -------------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  margin: 0;
+}
+
+.aporis-dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------- Header -------------- */
+.ap-header {
+  background: #1f1f1f;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.ap-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ap-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ap-brand__logo {
+  width: 36px;
+  height: 36px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ap-brand__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.ap-brand__title small {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.ap-brand__title strong {
+  font-size: 1rem;
+}
+
+.ap-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ap-tab {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ap-tab.is-active {
+  background: white;
+  color: black;
+}
+
+.ap-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ap-btn--logout {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.ap-btn--logout:hover {
+  background: #ff3333;
+}
+
+/* -------------- Main Layout -------------- */
+.ap-main {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* Sticky KPI ribbon */
+.ap-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--gap);
+  position: sticky;
+  top: 64px;
+  z-index: 20;
+  background: var(--bg);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* -------------- KPI Cards -------------- */
+.ap-kpi {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+
+.ap-kpi__label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.ap-kpi__value {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ap-kpi__hint {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* -------------- Section Cards -------------- */
+.section-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* -------------- Buttons -------------- */
+.btn {
+  background: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #f2f2f2;
+}
+
+.btn--primary {
+  background: black;
+  color: white;
+}
+
+.btn--indigo {
+  background: black;
+  color: white;
+}
+
+/* -------------- Pills -------------- */
+.pill {
+  display: inline-block;
+  border-radius: var(--pill-radius);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  background: #eee;
+  color: #333;
+}
+
+.pill--gray {
+  background: #e5e7eb;
+}
+
+.pill--blue {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.pill--green {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pill--yellow {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.pill--red {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* -------------- Tables -------------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  background: #f8f9fb;
+  text-align: left;
+  padding: 0.6rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.table td {
+  padding: 0.6rem;
+  border-top: 1px solid #eee;
+}
+
+.table tr:hover {
+  background: #fafafa;
+}
+
+/* -------------- Inputs -------------- */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  width: 240px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* -------------- Grid Utilities -------------- */
+.ap-grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.ap-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.ap-grid--4-1 {
+  grid-template-columns: 4fr 1.5fr;
+}
+
+/* -------------- Footer -------------- */
+.ap-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  padding: 1.5rem 0;
+}
+
+/* -------------- Lists -------------- */
+.tip-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.tip-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* -------------- Toast -------------- */
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: 0.18s ease;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
