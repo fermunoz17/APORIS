@@ -388,7 +388,7 @@ export default function Dashboard() {
       </main>
 
       <footer className="ap-footer">
-        © {new Date().getFullYear()} APORIS — Built for El Paso Electric Hackathon
+        © {new Date().getFullYear()} APORIS — Built for El Paso Electric
       </footer>
     </div>
   );
